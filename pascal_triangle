@@ -1,0 +1,20 @@
+# Pascal Triangle 
+from math import factorial as fac
+
+def binomial(x, y):
+    try:
+        return fac(x) // fac(y) // fac(x - y)
+    except ValueError:
+        return 0
+
+def generate(numRows):
+
+    print(range(numRows))
+    for x in range(numRows+1):
+        triangle = [[binomial(x, y)] for y in range(x + 1)]
+
+    print(triangle)
+
+
+
+generate(5)
