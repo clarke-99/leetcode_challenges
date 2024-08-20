@@ -37,8 +37,8 @@ A `median` is the exact middle value in a *sorted* array; therefore, the first s
 
 4. **Getting the Median**
    - As Python uses zero-indexing subtracting 1 from the found value(s) provides the required indices.
-    -- Calculate the average of the values l<sub>array</sub> is even.
-     -- Return `nums[m]` if l<sub>array</sub> is odd
+    -- Return `nums[m]` if l<sub>array</sub> is odd
+    -- Calculate the average of the values if l<sub>array</sub> is even.
 
 ### Notes
 
