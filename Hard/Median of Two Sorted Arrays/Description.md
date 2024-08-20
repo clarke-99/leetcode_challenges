@@ -32,12 +32,12 @@ A `median` is the exact middle value in a *sorted* array; therefore, the first s
 1. **Calculate Midpoint**
    - Calculate midpoint with `m = (l<sub>array</sub> + 1)/2`
 
-2. **Handling Float `m`**
+3. **Handling Float `m`**
    - Simple subtraction and addition of `m +/- 0.5` and conversion to an integer 
 
-3. **Getting the Median**
+4. **Getting the Median**
    - As Python uses zero-indexing subtracting 1 from the found value(s) provides the required indices.
-     -- Calculate the average of the values l<sub>array</sub> is even.
+    -- Calculate the average of the values l<sub>array</sub> is even.
      -- Return `nums[m]` if l<sub>array</sub> is odd
 
 ### Notes
