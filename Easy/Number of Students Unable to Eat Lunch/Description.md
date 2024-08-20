@@ -1,4 +1,4 @@
-**Challenge 1700: Number of Students Unable to Eat Lunch**
+## Challenge 1700: Number of Students Unable to Eat Lunch
 
 **Problem:**
 In the school cafeteria, there are two types of sandwiches: circular (0) and square (1). Students in a queue have preferences for these sandwiches. The number of sandwiches matches the number of students, and they are stacked such that the topmost sandwich is served first. The process to serve sandwiches is as follows:
@@ -10,17 +10,19 @@ This process continues until no student in the queue wants the top sandwich, at 
 
 Return the number of students who are unable to eat.
 
-**Examples:**
+## Examples:
 
-1. **Input:** `students = [1, 1, 0, 0]`, `sandwiches = [0, 1, 0, 1]`  
-   **Output:** `0`  
-   **Explanation:** All students eventually get the sandwich they prefer, so no student is unable to eat.
+ **Example 1:**
+ - **Input:** `students = [1, 1, 0, 0]`, `sandwiches = [0, 1, 0, 1]`
+ - **Output:** `0`
+ - **Explanation:** All students eventually get the sandwich they prefer, so no student is unable to eat.
 
-2. **Input:** `students = [1, 1, 1, 0, 0, 1]`, `sandwiches = [1, 0, 0, 0, 1, 1]`  
-   **Output:** `3`  
-   **Explanation:** After serving the sandwiches, 3 students cannot get the sandwich they prefer.
+ **Example 2:**
+ - **Input:** `students = [1, 1, 1, 0, 0, 1]`, `sandwiches = [1, 0, 0, 0, 1, 1]`
+ - **Output:** `3`
+ - **Explanation:** After serving the sandwiches, 3 students cannot get the sandwich they prefer.
 
-**Constraints:**
+## Constraints:
 
 - 1 <= `students.length`, `sandwiches.length` <= 100
 - `students.length` == `sandwiches.length`
