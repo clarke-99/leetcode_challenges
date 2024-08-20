@@ -6,14 +6,13 @@ This repository contains my solutions to various LeetCode challenges. These solu
 
 *Structure*
 
-/Easy: Solutions to easy-level problems.
-/Medium: Solutions to medium-level problems.
-/Hard: Solutions to hard-level problems.
-Each solution includes:
+- /Easy: Solutions to easy-level problems.
+- /Medium: Solutions to medium-level problems.
+- /Hard: Solutions to hard-level problems.
 
 *Files*
 
-Problem Statement: A brief description of the problem being solved.
+Description: A brief description of the problem being solved.
 Approach: An explanation of the approach taken to solve the problem.
 Code: The implementation of the solution.
 Notes: Any additional notes or observations about the solution or problem.
