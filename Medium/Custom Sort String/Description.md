@@ -30,3 +30,18 @@ You are given two strings: `order` and `s`. All characters in `order` are unique
 - `1 <= s.length <= 200`
 - `order` and `s` consist of lowercase English letters.
 - All characters in `order` are unique.
+
+## Approach
+
+1. **Frequency Counting**:
+   - Iterate through `order`, using a dictionary count of each character's occurrences in string `s`.
+
+2. **Construct Ordered String:**
+   - Create a result string by appending characters from `order` in the specified order and using their counts from the frequency dictionary.
+
+3. **Append Extra Characters:**
+   - Iterate through `s` and concatinate characters not found in `order` to the result string. This ensures all characters are included.
+  
+### Note 
+
+This may have been more efficient if I had used lists rather than concatenating strings.
