@@ -36,7 +36,3 @@ To solve this problem, you can use the sliding window technique:
 4. **Count** the number of valid subarrays ending at each position of the right pointer.
 
 This approach ensures that you traverse the array in linear time while dynamically adjusting the window to satisfy the product constraint.
-
----
-
-This Markdown description includes constraints, examples, and a brief explanation of the approach to solve the problem.
