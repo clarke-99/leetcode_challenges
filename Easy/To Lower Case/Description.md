@@ -4,7 +4,7 @@
 **Problem:** Given a string `s`, convert all uppercase letters in a given string to their corresponding lowercase letters.
 
 
-### Examples
+## Examples
 
 **Example 1:**
 
@@ -24,7 +24,7 @@
 - **Output:** `"lovely"`
 - **Explanation:** The uppercase letters 'L', 'O', 'V', 'E', 'L', 'Y' are converted to lowercase, resulting in `"lovely"`.
 
-### Constraints
+## Constraints
 
 - `1 <= s.length <= 100`
 - `s` consists of printable ASCII characters.
