@@ -22,5 +22,5 @@ If such an integer `x` exists, return it. Otherwise, return `-1`. It is guarante
 
 **Constraints:**
 
-1 <= `n` <= 1000
+- 1 <= `n` <= 1000
 
