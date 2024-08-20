@@ -29,3 +29,15 @@ Given an integer `n`, return the minimum number of operations needed to get the 
 
 - `1 <= n <= 1000`
 
+## Approach
+
+To solve this problem efficiently, we use a method based on the highest prime factors of the number n. The key insight is that the number of operations required to reach exactly `n` characters 'A' is related to the prime factorisation of `n`.
+
+1. **Prime Factorization**
+   - To determine the minimum number of operations, we break down the problem by finding the prime factors of n.
+   - Each prime factor represents a required step where we either need to copy or paste a sequence of characters.
+
+2. **Operations Calculation**
+   - Each prime factor, is added to a list. The sum of these prime factors is the minimum number of operations required.
+
+
