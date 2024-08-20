@@ -1,16 +1,12 @@
-class Solution(object):
+class Solution:
     def findDuplicates(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
-        freq = {}
+        duplicates = []
+        
         for num in nums:
-            count = 1
-            if num in freq:
-                freq[num] += 1
+            index = abs(num) - 1
+            if nums[index] < 0:
+                duplicates.append(abs(num))
             else:
-                freq[num] = count
-
-        duplicates = [num for num, count in freq.items() if count > 1]
+                nums[index] = -nums[index]
+        
         return duplicates
