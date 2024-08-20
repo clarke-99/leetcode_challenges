@@ -21,7 +21,7 @@
 - `num1` and `num2` consist of digits only.
 - Both `num1` and `num2` do not contain any leading zeros, except the number 0 itself.
 
-### Approach
+## Approach
 
 To tackle this problem, I initially considered a method that involves reversing the input strings and converting the characters at each index into their corresponding integer values by multiplying them with the appropriate power of 10. This would allow us to recreate the integers from the strings without using built-in conversion methods. Here’s a breakdown of the thought process:
 
