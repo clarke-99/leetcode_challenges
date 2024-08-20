@@ -23,7 +23,7 @@
 
 ## Approach
 
-To tackle this problem, I initially considered a method that involves reversing the input strings and converting the characters at each index into their corresponding integer values by multiplying them with the appropriate power of 10. This would allow us to recreate the integers from the strings without using built-in conversion methods. Here’s a breakdown of the thought process:
+To tackle this problem, I reversed the input strings and converted the characters at each index into their corresponding integer values by multiplying them with the appropriate power of 10. This recreates the integers from the strings without using built-in conversion methods. 
 
 1. **Reversing the Input Strings:**
    - Reversing makes it easier to handle the positional value of each digit.
