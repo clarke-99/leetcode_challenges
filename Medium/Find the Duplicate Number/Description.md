@@ -28,9 +28,29 @@
 - `nums.length == n + 1`
 - `1 <= nums[i] <= n`
 - All the integers in `nums` appear only once except for precisely one integer which appears two or more times.
-
-### Notes
-
 - Solve the problem without modifying the array `nums`.
 - Use only constant extra space.
+
+## Approach
+
+Due to the constraints of the problem, the `Hare and the Tortoise` algorithm is applicable. As there is a single duplicate within the array, it creates a cycle if viewed as a `linked list`, where each value points to the index of the next value.
+
+### Steps
+
+1. **Initialisation**
+   - `Tortoise` and `Hare` begin at index 0.
+  
+2. **Cycle Detection**
+   - The `Tortoise` moves a *single* step at a time.
+   - The `Hare` moves *two* steps at a time
+   - Eventually, the two will meet and this signifies the `beginning` of the cycle
+
+3. **Finder**
+   - Initialisation of a `Finder` at index 0.
+   - Move the `Finder` and the `Tortoise` (or `Hare`) a *single* step at a time.
+   - The `duplicate` is found where the pointers meet
+
+### Notes 
+
+This challenge was particularly difficult due to the concept of using the algorithm in the context of an array, rather than a traditional linked list. Understanding the cycle detection mechanism and adapting it to array indices provided a significant learning experience.
 
