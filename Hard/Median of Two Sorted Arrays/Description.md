@@ -30,15 +30,17 @@
 A `median` is the exact middle value in a *sorted* array; therefore, the first step was to combine and sort the two arrays. Once this has been done it is a simple matter of calculating the index position of the median. If the `median` index position is a `float`, the median value will be the average of the values on either side of the median index.
 
 1. **Calculate Midpoint**
-   - Calculate midpoint with `m = (l<sub>array</sub> + 1)/2`
+   - To find the median, first calculate the midpoint of the combined length of the two arrays. This is given by m = (length of merged array + 1) / 2.
 
-3. **Handling Float `m`**
-   - Simple subtraction and addition of `m +/- 0.5` and conversion to an integer 
-
-4. **Getting the Median**
-   - As Python uses zero-indexing subtracting 1 from the found value(s) provides the required indices.
-    -- Return `nums[m]` if l<sub>array</sub> is odd
-    -- Calculate the average of the values if l<sub>array</sub> is even.
+2. **Handling Float `m`**
+   - If the calculated midpoint results in a float (which indicates an even-length combined array), adjust the midpoint calculation to determine the indices around which the median will be computed.
+   
+     
+3. **Finding the Median**
+   - Convert the midpoint(s) to an integer for indexing purposes.
+   - In zero-indexed arrays, after merging:
+    -- If the combined length is odd, return the value at the midpoint index.
+    -- If the combined length is even, return the average of the values at the midpoint index and the one immediately before it.
 
 ### Notes
 
