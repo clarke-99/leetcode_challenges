@@ -26,11 +26,11 @@
 - `1 <= nums[i] <= 1,000`
 - `0 <= k <= 1,000,000`
 
-### Approach
+## Approach
 
-To solve this problem, you can use the sliding window technique:
+To solve this problem, I used the sliding window technique:
 
-1. **Initialize** two pointers (`left` and `right`) and a variable to keep track of the product of elements in the current window.
+1. **Initialise** two pointers (`left` and `right`) and a variable to keep track of the product of elements in the current window.
 2. **Expand** the right pointer to include more elements while the product of the subarray remains less than `k`.
 3. **Contract** the left pointer to maintain the condition when the product exceeds `k`.
 4. **Count** the number of valid subarrays ending at each position of the right pointer.
