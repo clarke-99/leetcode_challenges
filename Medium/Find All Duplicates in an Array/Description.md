@@ -32,9 +32,19 @@
 - `1 <= n <= 10^5`
 - `1 <= nums[i] <= n`
 - Each element in `nums` appears once or twice.
-
-### Notes
-
 - Your algorithm should run in O(n) time complexity.
 - You should use only constant extra space.
+
+## Approach
+
+The approach utilises the fact that the `num` in nums can be used as indices to track which elements have been seen. Here’s how the algorithm works:
+
+1. **Iterate**
+   - For each `num` in the array, calculate abs(`num`) and subtract 1 to account for zero-indexing.
+
+2. **Check and Mark**
+   - Check the value at the index calculated:
+     -- If *positive*, change the value in the array to be negative, this marks the `num` as seen.
+     -- If *negative*, the value has been seen and you can add the `num` to the list of `duplicates`
+
 
