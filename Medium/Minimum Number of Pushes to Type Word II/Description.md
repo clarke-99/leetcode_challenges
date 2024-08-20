@@ -49,3 +49,26 @@ The keys can be remapped to any number of letters, but each letter must be mappe
 
 - `1 <= word.length <= 10^5`
 - `word` consists of lowercase English letters.
+
+## Approach
+
+This function calculates the minimum number of key presses required to type a given word on an old-style phone keypad. The keypad has 8 keys, and characters are assigned to these keys based on their frequency in the word. After assigning the most frequent characters to the first 8 keys, additional characters are assigned by increasing the number of key presses required.
+
+### Steps:
+
+1. **Count Frequency:**
+   - Creates a dictionary that maps each character in the word to the number of times it appears.
+   
+3. **Sort by Frequency:**
+   - Sorts the characters in descending order based on their frequency.
+   - Ensures that the most frequent characters are considered first when assigning them to keys.
+
+3. **Assign Keypresses:**
+   - Characters are assigned to the 8 keys based on their frequency.
+   - Initially, the most frequent characters are assigned to the first key (requiring one key press each).
+   - Once all 8 keys are occupied, additional characters are assigned to the next available key, which increases the required number of presses for each subsequent character.
+
+
+## Summary
+
+The minimumPushes function simulates typing a word on an old mobile phone keypad with 8 keys. Characters are assigned to these keys based on how often they appear in the word. The most frequent characters are placed on the keys that require fewer presses. Once all 8 keys are used, additional characters are placed on the keys in a way that increases the number of presses required, simulating the behavior of typing on an old keypad where additional characters on a key require more key presses.
