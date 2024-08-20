@@ -36,3 +36,13 @@
 - `0 <= nums[i] <= 10^6`
 - `1 <= k <= n * (n - 1) / 2`
 
+## Approach
+
+1. **Binary Search**
+   - Sort the array so that a binary search is possible for this problem.
+   - Initialise `low` and `high` as 0 and the maximum possible difference.
+   - Calculate `mid` using the `high` and `low` values
+
+2. **Count Pairs**
+   - Using `mid` as the maximum distance, count how many pairs in the sorted array have a distance <= `mid`
+
