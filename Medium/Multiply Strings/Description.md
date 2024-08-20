@@ -23,9 +23,19 @@
 
 ### Approach
 
-To solve this problem, you need to simulate the multiplication process manually, handling string operations and digit manipulations. This involves:
+To tackle this problem, I initially considered a method that involves reversing the input strings and converting the characters at each index into their corresponding integer values by multiplying them with the appropriate power of 10. This would allow us to recreate the integers from the strings without using built-in conversion methods. Here’s a breakdown of the thought process:
 
-1. Initializing a result array to store intermediate results.
-2. Multiplying each digit of `num1` by each digit of `num2`, and accumulating the results.
-3. Managing carry-over and proper positioning in the result array.
-4. Converting the result array back to a string format, handling leading zeros.
+1. **Reversing the Input Strings:**
+- Reversing makes it easier to handle the positional value of each digit.
+
+2. **Manual Conversion:**
+- I wrote a get_num function that simulates converting each character to its corresponding integer value by using a list of digit characters. This is an attempt to avoid direct conversion but might still indirectly violate the problem's constraints.
+
+3. **Multiplication:**
+- The strings are multiplied after conversion, and the result is then converted back to a string.
+  
+### Challenges
+
+1. Ensuring no direct integer conversion is used.
+2. Handling carry-over during the multiplication.
+3. Efficiently managing large inputs up to 200 digits long.
