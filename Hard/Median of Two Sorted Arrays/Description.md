@@ -39,8 +39,8 @@ A `median` is the exact middle value in a *sorted* array; therefore, the first s
 3. **Finding the Median**
    - Convert the midpoint(s) to an integer for indexing purposes.
    - In zero-indexed arrays, after merging:
-     -- If the combined length is odd, return the value at the midpoint index.
-     -- If the combined length is even, return the average of the values at the midpoint index and the one immediately before it.
+   - If the combined length is odd, return the value at the midpoint index.
+   - If the combined length is even, return the average of the values at the midpoint index and the one immediately before it.
 
 ### Notes
 
