@@ -16,8 +16,8 @@ class Solution(object):
                 count += j - i - 1  
             return count
         
-        low, high = 0, nums[-1] - nums[0]  # Initialize binary search bounds
-
+        low, high = 0, nums[-1] - nums[0] 
+        
         while low < high:
             mid = (low + high) // 2
             if count_pairs_with_max_distance(mid) < k:
