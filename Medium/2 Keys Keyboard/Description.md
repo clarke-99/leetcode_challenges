@@ -31,7 +31,7 @@ Given an integer `n`, return the minimum number of operations needed to get the 
 
 ## Approach
 
-To solve this problem efficiently, we use a method based on the highest prime factors of the number n. The key insight is that the number of operations required to reach exactly `n` characters 'A' is related to the prime factorisation of `n`.
+To solve this problem efficiently, we use a method based on the highest prime factors of the number `n`. The key insight is that the number of operations required to reach exactly `n` characters 'A' is related to the prime factorisation of `n`.
 
 1. **Prime Factorisation**
    - To determine the minimum number of operations; break down the problem by finding the prime factors of `n`.
