@@ -5,7 +5,7 @@
  
 **Example 1:**
 
-**Input:** nums = [-4,-1,0,3,10]
+**Input:** nums = [-4,-1,0,3,10] \n
 **Output:** [0,1,9,16,100]
 **Explanation:** After squaring, the array becomes [16,1,0,9,100]. After sorting, it becomes [0,1,9,16,100].
 
