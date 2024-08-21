@@ -38,11 +38,31 @@
 
 ## Approach
 
-1. **Binary Search**
-   - Sort the array so that a binary search is possible for this problem.
-   - Initialise `low` and `high` as 0 and the maximum possible difference.
-   - Calculate `mid` using the `high` and `low` values
+The approach efficiently finds the k-th smallest distance using a combination of sorting, binary search, and a two-pointer technique. Sorting helps in applying the two-pointer method effectively, binary search narrows down the smallest valid distance, and the two-pointer technique counts the number of valid pairs within the distance constraint.
 
-2. **Count Pairs**
-   - Using `mid` as the maximum distance, count how many pairs in the sorted array have a distance <= `mid`
+1. **Sort the Array**
+   - This ensures that you can use a `two-pointer` approach to efficiently count valid pairs with a given maximum distance.
+
+2. **Initialize Binary Search**
+   - Set `low` to 0 and `high` to `nums[-1] - nums[0]`
+   - The binary search continues while `low < high`.
+     
+3. **Calculate Midpoint**
+   - `mid = (low + high) // 2`
+   - This is the midpoint distance being tested to see if there are at least `k` pairs.
+
+4. **Count Valid Pairs**
+   - The function `count_pairs_with_max_distance(max_dist)` counts the number of pairs (i, k) such that `nums[k] - nums[i] <= max_dist`.
+   - How it works:
+       - For each index `i`, use a second pointer `j` to find the *furthest index* such that the distance between `nums[i]` and `nums[j]` is within `max_dist`.
+       - The *number of valid pairs* with `i` as the starting index is `(j - i - 1)`, since `j` itself is not counted and we want pairs strictly between i and j.
+
+5. **Adjust Search Range**
+   - If the `count` of valid pairs is less than `k`, it means mid is too small to have at least `k` pairs, and the search range must be adjusted higher by setting `low = mid + 1`.
+   - If the `count` is at least `k`, it means mid is a *potential candidate*, but a smaller distance might also work; adjust the search range to lower distances by setting `high = mid`.
+
+6. **Loop Exit and Result**
+- The loop continues adjusting `low` and `high` until they converge.
+- When `low == high`, it represents the smallest distance such that there are at least `k` pairs with that distance or less.
+
 
