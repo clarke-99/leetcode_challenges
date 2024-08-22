@@ -1,4 +1,4 @@
-class Solution(object):
+class Solution1(object):
     def findComplement(self, num):
         """
         :type num: int
@@ -25,9 +25,16 @@ class Solution3(object):
         :type num: int
         :rtype: int
         """
-        binary = str(bin(num))
-        # com = ['1' if n == '0' else '0' for n in binary[2:]]
+        binary = bin(num)
         return int(''.join(['1' if n == '0' else '0' for n in binary[2:]]), 2)
+
+class Solution4(object):
+    def findComplement(self, num):
+        """
+        :type num: int
+        :rtype: int
+        """
+        return int(''.join(['1' if n == '0' else '0' for n in (bin(num)[2:])]), 2)
 
         
 
