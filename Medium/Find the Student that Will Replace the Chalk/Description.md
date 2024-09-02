@@ -33,9 +33,14 @@ Return the index of the student that will replace the chalk pieces.
 
 ## Approach
 
-1. **Find the Remainder**
-   - Using `k % sum(chalk)` you get what is left of `k` after `n` full rotations of `chalk`
-   - This massively reduces the time required in comparison to iteration over the array until `k<0`
-2. **Find the Index**
-   - Now that `k` has been sufficiently reduced, simply iterate over the array until `k` is too small for a student to get any chalk and return
-     the index of that student.
+1. **Reduce the Problem Size:**
+   - Reduce `k` by computing `k % sum(chalk)`.
+   - This gives the effective chalk pieces remaining after complete rounds, making the problem much smaller and more manageable.
+3. **Find the Index of the Student Who Will Replace the Chalk:**
+   - Iterate through the chalk array. For each student, subtract their chalk usage from k.
+   - The first student when `k` becomes less than their `chalk` requirement will be the one who needs to replace the chalk. Return that student's index.
+
+### Complexity
+
+1. **Time Complexity:** O(n), where n is the number of students. This is efficient since the algorithm makes a single pass through the list.
+2. **Space Complexity:** O(1), as no extra space proportional to the input size is required.
