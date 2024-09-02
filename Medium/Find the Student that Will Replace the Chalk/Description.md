@@ -26,10 +26,10 @@ Return the index of the student that will replace the chalk pieces.
  
 ## Constraints:
 
-`chalk.length == n`
-`1 <= n <= 10^5`
-`1 <= chalk[i] <= 10^5`
-`1 <= k <= 10^9`
+- `chalk.length == n`
+- `1 <= n <= 10^5`
+- `1 <= chalk[i] <= 10^5`
+- `1 <= k <= 10^9`
 
 ## Approach
 
