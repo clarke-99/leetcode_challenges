@@ -82,3 +82,16 @@ Return the *maximum* Euclidean distance the robot ever gets from the origin squa
 3. **Update `max_dist`**
    - After each `command` calculate the `Euclidean` distance
    - If the current distance is greater than `max_dist` update `max_dist`
+
+ ## Complexity 
+
+ 1. **Time Complexity:** O(n+k)
+    - n represents the number of commands. 
+    - k represents the number of obstacles
+
+ 2. **Space Complexity:** O(k)
+    - k represents number of obstacles stored within the set.
+   
+ ### Notes 
+
+ I think this could be improved by checking if there are any obstacles in the range that the robot would move first and then setting the robot to that position, rather than increasing incrementally. 
